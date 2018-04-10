@@ -1,9 +1,14 @@
+<!DOCTYPE html>
+{% load staticfiles %}
 <html>
   <head>
     <title>Sample</title>
+    <link rel="stylesheet" href="{% static "css/mystyle.css" %}"/>
   </head>
   <body bgcolor=white>
     <h1>"Hello, World" Application</h1>
     {{ insert_me }}
+    <h1>Photo of flower</h1>
+    <img src="{% static "images/282628.jpg"%}" alt="Uh oh did not show">
   </body>
 </html>
